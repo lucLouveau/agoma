@@ -1,7 +1,5 @@
 FROM node:18
 
-WORKDIR /app/medusa
-
 COPY package.json .
 
 RUN apt-get update
