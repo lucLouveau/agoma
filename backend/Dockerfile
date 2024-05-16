@@ -2,10 +2,10 @@
 FROM node:18
 
 # Set the working directory in the container
-WORKDIR /backend/app
+WORKDIR /backend
 
 # Copy the application files into the working directory
-COPY . /app
+COPY . /backend
 
 # Install the application dependencies
 RUN npm install
