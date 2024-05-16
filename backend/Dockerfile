@@ -1,5 +1,7 @@
 FROM node:18
 
-copy package.json .
+copy . .
 
-RUN npm install
+RUN npm install @medusajs/medusa-cli -g
+
+run medusa develop
