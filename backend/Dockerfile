@@ -1,6 +1,6 @@
 FROM node:18
 
-COPY package.json .
+COPY .
 
 RUN apt-get update
 
