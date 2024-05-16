@@ -3,7 +3,6 @@ FROM node:18
 WORKDIR /app/medusa
 
 COPY package.json .
-COPY develop.sh .
 COPY yarn.lock .
 
 RUN apt-get update
