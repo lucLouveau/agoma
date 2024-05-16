@@ -8,7 +8,6 @@ WORKDIR /backend
 COPY . /backend
 
 # Install the application dependencies
-RUN npm install
 
 RUN npm install @medusajs/medusa-cli -g
 # Build the React application
