@@ -1,14 +1,19 @@
-# Use the official Node.js image as the base image
 FROM node:18
 
-# Set the working directory in the container
-WORKDIR /app
+WORKDIR /app/medusa
 
-# Copy the application files into the working directory
-COPY . /app
+COPY package.json .
+COPY develop.sh .
+COPY yarn.lock .
 
-# Install the application dependencies
+RUN apt-get update
+
+RUN apt-get install -y python
+
+RUN npm install -g npm@latest
+
+RUN npm install -g @medusajs/medusa-cli@latest
+
 RUN npm install
 
-# Define the entry point for the container
-CMD ["npm", "start"]
+ENTRYPOINT ["./develop.sh"]
