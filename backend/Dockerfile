@@ -10,11 +10,12 @@ COPY . /app
 # Install the application dependencies
 RUN npm install
 
+RUN npm install @medusajs/medusa-cli -g
 # Build the React application
-RUN npm run build
+RUN medusa develop
 
 # Expose port 3000
-EXPOSE 3000
+EXPOSE 9000
 
 # Define the entry point for the container
 CMD ["npm", "start"]
