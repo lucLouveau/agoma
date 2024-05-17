@@ -31,7 +31,7 @@ const STORE_CORS = process.env.STORE_CORS;
 const DATABASE_URL =
   process.env.DATABASE_URL || "postgres://default:DEIkX9zF2scm@ep-dawn-dew-a29irtcr.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require";
 
-const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
+const REDIS_URL = process.env.REDIS_URL || "redis://default:AbNjAAIncDFjNDM1NThkZmE2Yzc0ZjY2ODU3YmM3MTI1ZDE3MjdlZXAxNDU5MjM@right-coyote-45923.upstash.io:6379";
 
 const STRIPE_API_KEY = "sk_test_51PByeqRt3Mqw8BGPw6Bh3vz0ai40cHzC0s4KuRuO4UNgXqpy87QctvYDEA3D9FGk8IXeVEFQvmiAhLbwLefTjGzO00FQbZPIsI"
 const plugins = [
