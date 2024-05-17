@@ -97,7 +97,7 @@ const projectConfig = {
 module.exports = {
   projectConfig: {
     redis_url: REDIS_URL,
-    database_url: DATABASE_URL,
+    database_url: "postgresql://postgres:cTxGSLvfeVwGnfVYWBKMmeAbFIPPbYNW@monorail.proxy.rlwy.net:23159/railway",
     database_type: "postgres",
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
