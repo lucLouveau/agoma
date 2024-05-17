@@ -95,20 +95,16 @@ const projectConfig = {
 
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
-  projectConfig:{
-    database_extra: process.env.NODE_ENV !== "development" ?
-      {
-        ssl: {
-          rejectUnauthorized: false,
-        },
-      } : {},
-    jwtSecret: process.env.JWT_SECRET,
-    cookieSecret: process.env.COOKIE_SECRET,
-    store_cors: STORE_CORS,
-    database_url: DATABASE_URL,
-    admin_cors: ADMIN_CORS,
+  projectConfig: {
     redis_url: REDIS_URL,
-    worker_mode: process.env.MEDUSA_WORKER_MODE,
+    database_url: DATABASE_URL,
+    database_type: "postgres",
+    store_cors: STORE_CORS,
+    admin_cors: ADMIN_CORS,
+    database_extra:
+      process.env.NODE_ENV !== "development"
+        ? { ssl: { rejectUnauthorized: false } }
+        : {},
   },
   plugins,
   modules,
