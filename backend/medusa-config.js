@@ -96,7 +96,6 @@ const projectConfig = {
 /** @type {import('@medusajs/medusa').ConfigModule} */
 module.exports = {
   projectConfig: {
-    redis_url: REDIS_URL,
     database_url: "postgres://default:DEIkX9zF2scm@ep-dawn-dew-a29irtcr.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require",
     database_type: "postgres",
     store_cors: STORE_CORS,
