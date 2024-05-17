@@ -12,4 +12,4 @@ RUN npm install -g @medusajs/medusa-cli@latest
 
 RUN npm install
 
-RUN medusa start
+RUN medusa build
