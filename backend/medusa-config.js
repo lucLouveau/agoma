@@ -29,7 +29,7 @@ const ADMIN_CORS =
 const STORE_CORS = process.env.STORE_CORS;
 
 const DATABASE_URL =
-  process.env.DATABASE_URL || "postgresql://postgres:cTxGSLvfeVwGnfVYWBKMmeAbFIPPbYNW@monorail.proxy.rlwy.net:23159/railway";
+  process.env.DATABASE_URL || "postgres://default:DEIkX9zF2scm@ep-dawn-dew-a29irtcr.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
 
@@ -97,7 +97,7 @@ const projectConfig = {
 module.exports = {
   projectConfig: {
     redis_url: REDIS_URL,
-    database_url: "postgresql://postgres:cTxGSLvfeVwGnfVYWBKMmeAbFIPPbYNW@monorail.proxy.rlwy.net:23159/railway",
+    database_url: "postgres://default:DEIkX9zF2scm@ep-dawn-dew-a29irtcr.eu-central-1.aws.neon.tech:5432/verceldb?sslmode=require",
     database_type: "postgres",
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
