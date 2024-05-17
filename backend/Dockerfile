@@ -2,7 +2,7 @@ FROM node:18
 
 WORKDIR /app/medusa
 
-COPY package.json .
+COPY . .
 
 RUN apt-get update
 
@@ -12,4 +12,4 @@ RUN npm install -g @medusajs/medusa-cli@latest
 
 RUN npm install
 
-ENTRYPOINT ["./develop.sh"]
+RUN medusa start
