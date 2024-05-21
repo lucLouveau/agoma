@@ -12,5 +12,4 @@ RUN npm install -g @medusajs/medusa-cli@latest
 
 RUN npm install
 
-
-CMD medusa start
+CMD npx medusa migrations run && medusa start
