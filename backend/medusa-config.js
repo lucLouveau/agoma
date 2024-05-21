@@ -105,10 +105,6 @@ module.exports = {
     jwtSecret: process.env.JWT_SECRET,
     cookieSecret: process.env.COOKIE_SECRET,
     worker_mode: "worker",
-    database_extra:
-      process.env.NODE_ENV !== "dévelopment"
-        ? { ssl: { rejectUnauthorized: false } }
-        : {},
   },
   plugins,
   modules,
