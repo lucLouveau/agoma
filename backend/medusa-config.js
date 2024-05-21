@@ -102,7 +102,6 @@ module.exports = {
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
     auth_cors: process.env.AUTH_CORS,
-    redis_url: REDIS_URL,
     database_extra:
       process.env.NODE_ENV !== "development"
         ? { ssl: { rejectUnauthorized: false } }
