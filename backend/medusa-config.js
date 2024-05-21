@@ -102,6 +102,8 @@ module.exports = {
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
     auth_cors: process.env.AUTH_CORS,
+    jwtSecret: process.env.JWT_SECRET,
+    cookieSecret: process.env.COOKIE_SECRET,
     database_extra:
       process.env.NODE_ENV !== "dévelopment"
         ? { ssl: { rejectUnauthorized: false } }
