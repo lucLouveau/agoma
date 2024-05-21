@@ -89,6 +89,7 @@ const projectConfig = {
   database_url: DATABASE_URL,
   admin_cors: ADMIN_CORS,
   redis_url: REDIS_URL,
+  auth_cors: process.env.AUTH_CORS,
   worker_mode: process.env.MEDUSA_WORKER_MODE,
   // Uncomment the following lines to enable REDIS
 };
@@ -100,6 +101,7 @@ module.exports = {
     database_type: "postgres",
     store_cors: STORE_CORS,
     admin_cors: ADMIN_CORS,
+    auth_cors: process.env.AUTH_CORS,
     database_extra:
       process.env.NODE_ENV !== "development"
         ? { ssl: { rejectUnauthorized: false } }
