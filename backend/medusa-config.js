@@ -104,6 +104,7 @@ module.exports = {
     auth_cors: process.env.AUTH_CORS,
     jwtSecret: process.env.JWT_SECRET,
     cookieSecret: process.env.COOKIE_SECRET,
+    redis_url: REDIS_URL,
     worker_mode: "worker",
     database_extra: process.env.NODE_ENV !== "development" ?
       {
