@@ -11,7 +11,7 @@ switch (process.env.NODE_ENV) {
   case "test":
     ENV_FILE_NAME = ".env.test";
     break;
-  case "development":
+  case "dévelopment":
   default:
     ENV_FILE_NAME = ".env";
     break;
@@ -47,7 +47,7 @@ const plugins = [
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
-      serve: process.env.NODE_ENV === "development",
+      serve: process.env.NODE_ENV === "dévelopment",
     },
   },
   {
@@ -103,7 +103,7 @@ module.exports = {
     admin_cors: ADMIN_CORS,
     auth_cors: process.env.AUTH_CORS,
     database_extra:
-      process.env.NODE_ENV !== "development"
+      process.env.NODE_ENV !== "dévelopment"
         ? { ssl: { rejectUnauthorized: false } }
         : {},
   },
