@@ -79,7 +79,7 @@ const ProductThumbnailSection = ({ product }: Props) => {
           {product.thumbnail && (
             <div className="flex aspect-square items-center justify-center">
               <img
-                src={product.thumbnail}
+                src={product.thumbnail.replace("http://localhost:9000","https://agoma.luc-developpement.com")}
                 alt={`Thumbnail for ${product.title}`}
                 className="rounded-rounded max-h-full max-w-full object-contain"
               />
