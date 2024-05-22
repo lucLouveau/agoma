@@ -76,7 +76,7 @@ const ThumbnailModal = ({ product, open, onClose }: Props) => {
       )
       return
     }
-    const url = preppedImages?.[0]?.url
+    const url = preppedImages?.[0]?.url.replace("http://localhost:9000", "https://agoma.luc-developpement.com")
 
     onUpdate(
       {

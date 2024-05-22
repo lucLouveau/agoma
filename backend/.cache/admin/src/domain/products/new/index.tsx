@@ -172,7 +172,7 @@ const NewProduct = ({ onClose }: Props) => {
         }
         const urls = preppedImages.map((image) => image.url)
 
-        payload.thumbnail = urls[0]
+        payload.thumbnail = urls[0].replace("http://localhost:9000", "https://agoma.luc-developpement.com")
       }
 
       mutate(payload, {
