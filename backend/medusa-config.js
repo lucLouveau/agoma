@@ -58,7 +58,9 @@ const plugins = [
     resolve: "medusa-payment-stripe",
     options: {
       api_key: STRIPE_API_KEY,
-      webhook_secret: "whsec_fXFBIcdJaon9tFTqAX4gIFdkZr8itlMc"
+      webhook_secret: "whsec_fXFBIcdJaon9tFTqAX4gIFdkZr8itlMc",
+      capture:true,
+      automatic_payment_methods:true
     },
   },
   
@@ -68,6 +70,7 @@ const plugins = [
       sandbox: process.env.PAYPAL_SANDBOX,
       clientId: process.env.PAYPAL_CLIENT_ID,
       clientSecret: process.env.PAYPAL_CLIENT_SECRET,
+      capture:true,
     },
   },
 ];
