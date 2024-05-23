@@ -33,7 +33,7 @@ const DATABASE_URL =
 
 const REDIS_URL = process.env.REDIS_URL || "redis://default:AbNjAAIncDFjNDM1NThkZmE2Yzc0ZjY2ODU3YmM3MTI1ZDE3MjdlZXAxNDU5MjM@right-coyote-45923.upstash.io:6379";
 
-const STRIPE_API_KEY = "pk_test_51PByeqRt3Mqw8BGPJ37aQMlUeDe5xY59ZMysLXqZNCh70jmvv1w7mR9uMr8fTKL4MMHoCskJ3xaZut8CziUQlSVl00VDjpZmGX"
+const STRIPE_API_KEY = "sk_test_51PByeqRt3Mqw8BGPw6Bh3vz0ai40cHzC0s4KuRuO4UNgXqpy87QctvYDEA3D9FGk8IXeVEFQvmiAhLbwLefTjGzO00FQbZPIsI"
 const plugins = [
   `medusa-fulfillment-manual`,
   `medusa-payment-manual`,
@@ -57,7 +57,7 @@ const plugins = [
   {
     resolve: "medusa-payment-stripe",
     options: {
-      api_keys: STRIPE_API_KEY,
+      api_key: STRIPE_API_KEY,
       webhook_secret: "whsec_fXFBIcdJaon9tFTqAX4gIFdkZr8itlMc"
     },
   },
