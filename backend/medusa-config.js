@@ -61,6 +61,7 @@ const plugins = [
       webhook_secret: "whsec_fXFBIcdJaon9tFTqAX4gIFdkZr8itlMc"
     },
   },
+  
   {
     resolve: "medusa-payment-paypal",
     options: {
@@ -72,7 +73,7 @@ const plugins = [
 ];
 
 const modules = {
-  /*eventBus: {
+  eventBus: {
     resolve: "@medusajs/event-bus-redis",
     options: {
       redisUrl: REDIS_URL
@@ -83,7 +84,7 @@ const modules = {
     options: {
       redisUrl: REDIS_URL
     }
-  },*/
+  },
 };
 
 /** @type {import('@medusajs/medusa').ConfigModule["projectConfig"]} */
