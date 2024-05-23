@@ -41,7 +41,7 @@ const plugins = [
     resolve: `@medusajs/file-local`,
     options: {
       upload_dir: "uploads",
-      backend_url: "agoma.luc-developpement.com"
+      backend_url: "https://agoma.luc-developpement.com"
     },
   },
   {
